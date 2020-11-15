@@ -1,4 +1,4 @@
-name: Tests
+name: tests
 
 on:
   push:
@@ -32,4 +32,4 @@ jobs:
       -   run: composer install --no-progress --ansi
           if: "matrix.dependencies != 'lowest'"
 
-      -   run: vendor/bin/phpunit Tests
+      -   run: vendor/bin/phpunit tests
