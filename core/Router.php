@@ -2,7 +2,7 @@
 
 namespace Core;
 
-class Router
+final class Router
 {
     /**
      * @var array

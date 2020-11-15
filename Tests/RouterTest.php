@@ -8,9 +8,7 @@ class RouterTest extends TestCase
     {
         $router = new Core\Router();
         $router->add('/test', ['testController' => 'testAction']);
-
         $routes = $router->getRoutes();
-
         $expected = [
             '/^\/test$/i' =>
                 [

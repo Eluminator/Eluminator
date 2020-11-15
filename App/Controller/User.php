@@ -2,7 +2,9 @@
 
 namespace App\Controller;
 
-class User
+use Core\BaseController;
+
+class User extends BaseController
 {
 
     public function login(){
