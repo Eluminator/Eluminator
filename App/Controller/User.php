@@ -12,7 +12,7 @@ class User extends BaseController
     }
 
     public function logout(){
-        echo 'hiiiiii!!!';
+        echo 'hiiiiii!!!dwoajdpiwajpdi';
     }
 
 }
