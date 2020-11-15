@@ -44,7 +44,7 @@ final class Router
         if($this->match($url)){
             $controller = $this->params['controller'];
             $controller = $this->toStudlyCaps($controller);
-            $controller = "App\Controller\\$controller";
+            $controller = "src\Controller\\$controller";
 
 
             if(class_exists($controller)){
