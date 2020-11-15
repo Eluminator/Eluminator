@@ -1,0 +1,5 @@
+- Intuitive
+- Versionless
+- REST
+- Clear Error handling
+- Deterministic (one action -> one result) 

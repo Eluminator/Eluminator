@@ -8,7 +8,6 @@ class Router
      * @var array
      */
     protected array $routes = [];
-
     protected array $params = [];
 
     public function add(string $route, array $params = []) : void
@@ -47,6 +46,7 @@ class Router
             $controller = $this->toStudlyCaps($controller);
             $controller = "App\Controller\\$controller";
 
+
             if(class_exists($controller)){
                 $controllerObject = new $controller();
 
@@ -61,7 +61,6 @@ class Router
             }else{
                 echo "Controller class $controller not found";
             }
-
         }else{
             echo "Route not found";
         }
